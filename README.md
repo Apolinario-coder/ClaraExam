@@ -6,7 +6,7 @@ Aplicativo desktop Windows em **Python + Rust**, com interface em português par
 
 ## Experimentar
 
-A versão atual está em **`dist/ClaraExam-logo.exe`**, com o novo logo vetorial na navegação lateral, além das melhorias anteriores de login, data, relógio e bloqueio de atalhos. Feche a versão anterior e abra esse arquivo. A primeira inicialização pode levar alguns segundos para extrair o motor do navegador. Os executáveis antigos foram preservados.
+A versão atual está em **`dist/ClaraExam.exe`**, com o novo logo vetorial na navegação lateral, além das melhorias de login, data, relógio e bloqueio de atalhos. Feche a versão anterior e abra esse arquivo. A primeira inicialização pode levar alguns segundos para extrair o motor do navegador.
 
 O build padrão gera a variante em pasta, `dist/ClaraExam/ClaraExam.exe`. A cópia dessa pasta que ficou da primeira entrega é anterior às correções; recompile antes de distribuí-la. Para distribuir essa variante, envie a pasta completa: o motor Chromium possui DLLs e um processo auxiliar. O build `-OneFile` gera novamente o executável único atualizado.
 
