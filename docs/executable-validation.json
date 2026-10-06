@@ -1,9 +1,0 @@
-{
-  "native_core": true,
-  "internal_flow": true,
-  "browser_created": true,
-  "external_page_loaded": true,
-  "packaged": true,
-  "external_content_verified": true,
-  "browser_rejected_unlisted_host": true
-}
