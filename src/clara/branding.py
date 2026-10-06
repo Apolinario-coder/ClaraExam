@@ -1,0 +1,30 @@
+"""Vector identity embedded in the executable; no external asset path required."""
+from PySide6.QtCore import QByteArray
+from PySide6.QtSvgWidgets import QSvgWidget
+
+
+LOGO_SVG = '''<svg xmlns="http://www.w3.org/2000/svg" width="360" height="128" viewBox="0 0 360 128">
+  <title>Clara Exam</title>
+  <desc>Um C aberto com uma marca de verificação, ao lado do nome Clara Exam.</desc>
+  <defs>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a3f2da"/>
+      <stop offset="1" stop-color="#36c4af"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="13" width="100" height="100" rx="30" fill="#214553"/>
+  <path d="M70 39 A31 31 0 1 0 70 87" fill="none" stroke="url(#mint)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M47 63 L59 75 L85 49" fill="none" stroke="#f2fffb" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M88 17 L91 24 L98 27 L91 30 L88 37 L85 30 L78 27 L85 24 Z" fill="#a3f2da"/>
+  <text x="120" y="77" fill="#f2f8fa" font-family="Segoe UI, sans-serif" font-size="70" font-weight="600" letter-spacing="-2">clara</text>
+  <text x="124" y="108" fill="#8fe3ce" font-family="Segoe UI, sans-serif" font-size="20" font-weight="600" letter-spacing="8">EXAM</text>
+</svg>'''
+
+
+class BrandLogo(QSvgWidget):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.load(QByteArray(LOGO_SVG.encode("utf-8")))
+        self.setFixedSize(180, 64)
+        self.setAccessibleName("Clara Exam")
+        self.setToolTip("Clara Exam · Avaliações com clareza")

@@ -1,0 +1,21 @@
+{
+  "origin": "accounts.google.com",
+  "path": "/v3/signin/identifier",
+  "blocked_resources": [
+    {
+      "origin": "https://play.google.com",
+      "kind": "ResourceTypeXhr"
+    },
+    {
+      "origin": "https://play.google.com",
+      "kind": "ResourceTypePing"
+    },
+    {
+      "origin": "https://www.google.com",
+      "kind": "ResourceTypeFavicon"
+    }
+  ],
+  "title": "Google Drive: Sign-in",
+  "email_input": true,
+  "stylesheet_count": 4
+}
